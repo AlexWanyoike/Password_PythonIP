@@ -13,7 +13,14 @@ class User:
     def save_user(self):
         
         User.user_list.append(self)    
-    
+
+    def __init__(self, account_name, user_name, password_info):
+
+        self.new_account = new_account
+        self.user_name = Username
+        self.passwordinfo = passwordinfo if passwordinfo else Accounts.password_new()
+
+
     def delete_user(self):
         '''
         delete_contact method deletes a saved account from the user_list
