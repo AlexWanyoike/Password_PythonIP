@@ -42,12 +42,12 @@ class Accounts():
     accounts_list = []
 
     @classmethod
-    def contact_exist(cls,number):
+    def user_exist(cls,username, passwordinfo):
         '''
         Checks if something is available 
         '''
-        for contact in cls.contact_list:
-            if contact.phone_number == number:
+        for user in User.user_list:
+            if user.username == string:
                     return True
 
         return False
@@ -59,3 +59,21 @@ class Accounts():
         self.accountname = accountname
         self.username = username
         self.passwordinfo = passwordinfo
+    
+    //
+
+    def delete_accounts(self):
+        '''
+        Function to delete a contact
+        '''
+        Accounts.accounts_list.remove(self)
+
+    @classmethod
+    def find_accounts(cls,number):
+        '''
+        find all  the values 
+        '''
+
+        for accounts in cls.accounts_list:
+            if accounts.accountname == accountname:
+                return accounts
