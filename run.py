@@ -1,6 +1,5 @@
 import random
-from user import User
-import unittest # Importing the unittest module
+from user import User , Accounts
 import pyperclip
 
 def create_user(username,passwordinfo):
@@ -10,18 +9,29 @@ def create_user(username,passwordinfo):
     user = User(username,passwordinfo)
     return(user)
 
-        
-
-
-def test_init(self):
+def save_user(user):
     '''
-    test_init test case to test if the object is initialized properly
+    Function to save contact
     '''
+    contact.save_user()
 
-    self.assertEqual(self.new_user.username,"James")
-    self.assertEqual(self.new_user.passwordinfo,"Muriuki")
-    
+def create_newaccount(accountname, username, passwordinfo):
+    '''
+        Trying to create a new Account
+    '''
+    newaccount = Accounts(accountname,username,passwordinfo)
+    return (newaccount)
+
+
+
+
 
 
 if __name__ == '__main__':
     unittest.main()
+
+
+
+    
+
+
