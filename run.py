@@ -1,1 +1,4 @@
-print("Hello world")
+import random
+from user import User
+
+
