@@ -41,6 +41,17 @@ class Accounts():
         '''
     accounts_list = []
 
+    @classmethod
+    def contact_exist(cls,number):
+        '''
+        Checks if something is available 
+        '''
+        for contact in cls.contact_list:
+            if contact.phone_number == number:
+                    return True
+
+        return False
+
     def __init__(self, accountname, username, passwordinfo):
         '''
         Used to verify the account list
