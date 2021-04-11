@@ -12,7 +12,10 @@ class User:
 
     def save_user(self):
         
-        User.user_list.append(self)
-        
+        User.user_list.append(self)    
     
-    
+    def delete_user(self):
+        '''
+        delete_contact method deletes a saved account from the user_list
+        '''
+        User.user_list.remove(self)

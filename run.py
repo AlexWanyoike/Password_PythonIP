@@ -32,6 +32,12 @@ def delete_accounts(accounts):
     '''
     accounts.delete_accounts()
 
+def find_accounts(numbers):
+    '''
+    Function that finds a contact by number and returns the contact
+    '''
+    return Accounts.find_accounts(number)
+
 
 
 if __name__ == '__main__':
