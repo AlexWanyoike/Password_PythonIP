@@ -22,8 +22,15 @@ def create_newaccount(accountname, username, passwordinfo):
     newaccount = Accounts(accountname,username,passwordinfo)
     return (newaccount)
 
+def save_accounts(accounts):
 
+    accounts.save_accounts()
 
+def delete_accounts(accounts):
+    '''
+    Function to delete an account
+    '''
+    accounts.delete_accounts()
 
 
 
