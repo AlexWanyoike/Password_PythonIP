@@ -45,6 +45,12 @@ def password_new():
     new_pass = Accounts.password_new()
     return new_pass
 
+def display_user_details():
+    '''
+    Display all User Details
+    '''
+    return Accounts.display_accounts()
+
 def main():
     while True:
         print('\n')
@@ -67,6 +73,23 @@ def main():
                     
                     else passwordint === 'generate'
                         passwordint = password()
+
+                    save_user(create_user(accountname,username,passwordinfo))
+                    print ('\n')
+                    print(f"New User{accountname} {username} {passwordinfo} created")
+                    print ('\n')
+
+         elif short_code == 'dc':
+
+                    if display_user():
+                            print("Here is a list of all your users")
+                            print('\n')
+                        for accounts in display_user_details():
+                            print(f"User {accountname}  Password {passwordinfo}")
+
+        
+                            
+                    
 
 
 
