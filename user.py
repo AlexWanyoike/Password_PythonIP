@@ -60,7 +60,10 @@ class Accounts():
         self.username = username
         self.passwordinfo = passwordinfo
     
-    //
+    def save_details(self):
+        '''
+        Saving all the details
+        '''
 
     def delete_accounts(self):
         '''
@@ -73,7 +76,6 @@ class Accounts():
         '''
         find all  the values 
         '''
-
         for accounts in cls.accounts_list:
             if accounts.accountname == accountname:
                 return accounts
