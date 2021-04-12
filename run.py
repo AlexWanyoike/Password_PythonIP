@@ -38,7 +38,10 @@ def find_accounts(numbers):
     '''
     return Accounts.find_accounts(number)
 
-
+def password_new():
+    '''
+        Password generator
+    '''
 
 
 
