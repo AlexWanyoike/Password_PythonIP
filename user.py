@@ -72,10 +72,24 @@ class Accounts():
         Accounts.accounts_list.remove(self)
 
     @classmethod
-    def find_accounts(cls,number):
+    def find_accounts(cls, accountname):
         '''
         find all  the values 
         '''
         for accounts in cls.accounts_list:
             if accounts.accountname == accountname:
                 return accounts
+
+    chars = "qwertyuiopsdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$%^&*()_="
+
+    while 1:
+        passwordinfo = int(input("What lengthe would you like:"))
+        for x in range(0,1):
+            password = ""
+            for x in range(0,passwordinfo):
+                password_char = random.choice(chars)
+                password = password + password_char
+
+            print("",password)
+
+    
