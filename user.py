@@ -1,4 +1,5 @@
-import pyperclip
+import pyperclip 
+import random, string
 class User:
     '''
         Create a new User with both Username and Password
@@ -14,10 +15,10 @@ class User:
         
         User.user_list.append(self)    
 
-    def __init__(self, account_name, user_name, password_info):
+    def __init__(self, account_name, username_det, password_info):
 
-        self.new_account = new_account
-        self.user_name = Username
+        self.newaccount_det = newaccount
+        self.username_det = username
         self.passwordinfo = passwordinfo if passwordinfo else Accounts.password_new()
 
     
@@ -37,7 +38,7 @@ class User:
 
 class Accounts():
         '''
-            This is a record of the account to be Created
+            This is a account of the account to be Created
         '''
     accounts_list = []
 
@@ -46,11 +47,12 @@ class Accounts():
         '''
         Checks if something is available 
         '''
+        new_user_details = ""
         for user in User.user_list:
             if user.username == string:
                     return True
 
-        return False
+        return new_user_details
 
     def __init__(self, accountname, username, passwordinfo):
         '''
@@ -72,6 +74,13 @@ class Accounts():
         Accounts.accounts_list.remove(self)
 
     @classmethod
+    def display_accounts(cls)
+        '''
+        New workig information of Accounts. 
+        '''
+        return cls.accounts_list
+
+    @classmethod
     def find_accounts(cls, accountname):
         '''
         find all  the values 
@@ -83,9 +92,9 @@ class Accounts():
     
 
     chars = "qwertyuiopsdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$%^&*()_="
-
+    @classmethod
     while 1:
-        passwordinfo = int(input("What lengthe would you like:"))
+    def password_new = int(input("What length would you like:"))
         for x in range(0,1):
             password = ""
             for x in range(0,passwordinfo):

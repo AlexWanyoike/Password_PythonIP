@@ -1,10 +1,11 @@
+#!/usr/bin/env python3.9
 import random
 from user import User , Accounts
 import pyperclip
 
 def create_user(username,passwordinfo):
     '''
-        Lets Create a New User
+        Create information of Genertor  
     '''
     user = User(username,passwordinfo)
     return(user)
@@ -32,11 +33,11 @@ def delete_accounts(accounts):
     '''
     accounts.delete_accounts()
 
-def find_accounts(numbers):
+def find_accounts(find):
     '''
     Function that finds a contact by number and returns the contact
     '''
-    return Accounts.find_accounts(number)
+    return Accounts.find_accounts(find)
 
 def password_new():
     '''
@@ -50,6 +51,13 @@ def display_user_details():
     Display all User Details
     '''
     return Accounts.display_accounts()
+
+def input_user(username, passwordinfo):
+    '''
+
+    '''
+    avail_user = Accounts.input_user(username, passwordinfo)
+    return avail_user
 
 def main():
     while True:
