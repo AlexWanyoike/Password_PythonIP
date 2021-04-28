@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3.9
 
 import random
 
@@ -88,7 +88,7 @@ def del_credentials(password):
 
 def main():
     print("")
-print(" ###################################\n      🤖**PASSWORD LOCKER**🤖\n ###################################\n\nPlease signup to continue\n")
+print("      🤖**PASSWORD LOCKER**🤖\n ##\n\nPlease signup to continue\n")
 
 print("Enter user name: ")
 f_name = input()
