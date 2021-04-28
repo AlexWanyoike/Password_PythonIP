@@ -166,7 +166,7 @@ while True:
             
         else:
             print("😡 user does not exist!! 🤬 ")
-            print("Access denied"*100000000)
+            print("Access denied"*1)
 
     # display user info
     elif short_code == 'dc':

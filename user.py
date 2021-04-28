@@ -19,11 +19,11 @@ class User:
         '''
         User.user_list.append(self)   
 
-   # def delete_user(self):
-       #     '''
-       # delete_contact method deletes a saved account from the user_list
-       # '''
-       # User.user_list.remove(self)
+    def delete_user(self):
+        '''
+        # delete_contact method deletes a saved account from the user_list
+        # '''
+        User.user_list.remove(self)
 
     @classmethod
     def find_by_user_name(cls, user_name):
