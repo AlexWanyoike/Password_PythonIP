@@ -190,7 +190,7 @@ while True:
 
         search_first_name = input()
         if check_existing_users(search_first_name):
-            search_credential = find_credential(search_first_name)
+            #search_credential = find_credential(search_first_name)
             print(f"{search_credential.first_name} {search_credential.last_name} ")
 
             print('-' * 20)
