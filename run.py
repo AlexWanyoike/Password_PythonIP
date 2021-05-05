@@ -88,7 +88,7 @@ def del_credentials(password):
 
 def main():
     print("")
-print("      🤖**PASSWORD LOCKER**🤖\n ##\n\nPlease signup to continue\n")
+print("**PASSWORD LOCKER**\n ##\n\nPlease signup to continue\n")
 
 print("Enter user name: ")
 f_name = input()
@@ -100,7 +100,7 @@ u_password = input()
 save_users(create_user(f_name, u_password))
 
 print('\n')
-print(f"Hi {f_name}. Sign up was successful.🥳   😉 ")
+print(f"Hi {f_name}. Sign up was successful.")
 print('\n')
 
 while True:
@@ -136,7 +136,7 @@ while True:
 
                 print("What type of social-media accoutnt's password would you like to create for:- ")
                 print('-' * 83)
-                print("    Facebook | Twtter | Snapchat | Linkedin | Email | Just a top secret folder")
+                print("    Facebook | Twtter | Snapchat | Linkedin | Email | Other")
                 print('-' * 83)
                 ei_address = input()
 
@@ -149,7 +149,7 @@ while True:
 
                 else:
                     x = []
-                    r = range(306, 399)
+                    r = range(200, 6000)
                     for n in r:
                         x.append(str(n))
                     pi_password = (fi_name+li_name+random.choice(x))
@@ -165,13 +165,13 @@ while True:
                 break
             
         else:
-            print("😡 user does not exist!! 🤬 ")
+            print(" user does not exist!!")
             print("Access denied"*1)
 
     # display user info
     elif short_code == 'dc':
         if display_credentials():
-            print("Here's a list a list of all users 😇")
+            print("Here's a list a list of all users ")
             print('\n')
 
             for credential in display_credentials():
@@ -181,7 +181,7 @@ while True:
 
         else:
             print('\n')
-            print("No credentials to display 😶")
+            print("No credentials to display")
             print('\n')
 
         # find credential
@@ -190,7 +190,7 @@ while True:
 
         search_first_name = input()
         if check_existing_users(search_first_name):
-            #search_credential = find_credential(search_first_name)
+            search_credential = find_credential(search_first_name)
             print(f"{search_credential.first_name} {search_credential.last_name} ")
 
             print('-' * 20)
@@ -202,17 +202,17 @@ while True:
             print(f"Password....{search_credential.password}")
 
         else:
-            print("User does not exist!! 🥵")
+            print("User does not exist!!")
         
     elif short_code == 'dc':
         print("First enter your password: ")
         password = input()
 
     elif short_code == "ex":
-        print(f"Bye, {f_name}. Have a lovely time 🤗  .")
+        print(f"Bye, {f_name}. Have a lovely time  .")
         break
     else:
-        print(f"Sorry {f_name} I really didn't get that request 😵. Please use the clear short code 🧐")
+        print(f"Sorry {f_name} I really didn't get that request. Please use the clear short code ")
 
 
 if __name__ == '__main__':
